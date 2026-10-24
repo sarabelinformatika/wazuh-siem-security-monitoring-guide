@@ -1,0 +1,13 @@
+schema_version: 1
+detections:
+  - id: DET-AUTH-001
+    owner: security-operations
+    title: repeated-remote-authentication-failure
+    data_sources: [auth-linux]
+    wazuh_rule_ids: [100101]
+    severity: high
+    positive_test: tests/auth-failure-positive.log
+    negative_test: tests/auth-failure-negative.log
+    playbook: IR-AUTH-01
+    review_interval_days: 90
+    exception_expiry_required: true

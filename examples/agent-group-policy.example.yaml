@@ -1,0 +1,16 @@
+schema_version: 1
+groups:
+  - name: linux-production
+    owner: platform-security
+    asset_query: operating_system_linux AND environment_production
+    required_modules: [syscollector, fim, sca, vulnerability-detection]
+    disconnected_threshold_minutes: 30
+    canary_percentage: 5
+  - name: windows-workstations
+    owner: endpoint-security
+    asset_query: operating_system_windows AND role_workstation
+    required_modules: [syscollector, fim, sca]
+    disconnected_threshold_minutes: 240
+exceptions:
+  approval_required: true
+  maximum_days: 90

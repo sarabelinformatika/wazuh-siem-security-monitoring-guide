@@ -1,0 +1,18 @@
+schema_version: 1
+measurement:
+  endpoints: 500
+  pilot_days: 14
+  average_daily_primary_gib: 18
+  peak_multiplier: 2.5
+policy:
+  primary_shards_per_rollover: 3
+  replica_count: 1
+  hot_days: 30
+  warm_days: 150
+  snapshot_days: 365
+  free_space_warning_percent: 25
+  free_space_critical_percent: 15
+assumptions:
+  compression_factor_measured: true
+  node_failure_reserve_included: true
+  restore_tested: true

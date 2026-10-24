@@ -1,0 +1,8 @@
+<group name="sarabel_example,authentication_failed,">
+  <rule id="100101" level="8">
+    <decoded_as>sarabel-example-auth</decoded_as>
+    <field name="status">failed</field>
+    <description>Example authentication failure for $(user) from $(srcip)</description>
+    <group>authentication_failed,</group>
+  </rule>
+</group>

@@ -1,0 +1,10 @@
+*.swp
+*.tmp
+*.log
+.DS_Store
+.idea/
+.vscode/
+reports/
+evidence/
+secrets/
+certificates/

@@ -1,0 +1,3 @@
+# Disclaimer
+
+This repository is educational and operational reference material, not a guarantee of detection, security, availability, compliance, or fitness for a particular environment. Wazuh, operating systems, integrations, threats, and regulations change. Test every change in an equivalent non-production environment, maintain recovery access and verified backups, follow current vendor guidance, and obtain qualified review for regulated or high-impact systems. The authors and contributors accept no liability for outage, data loss, missed detection, unintended response, or other damage arising from use.

@@ -1,0 +1,13 @@
+schema_version: 1
+sources:
+  - id: auth-linux
+    owner: platform-operations
+    transport: agent
+    format: journald
+    expected_daily_mib: 250
+    timezone: UTC
+    required_fields: [timestamp, host, program, user, source_ip, outcome]
+    validation_event: approved-test-login-failure
+    failure_alert_minutes: 15
+    retention_days: 180
+    sensitivity: restricted

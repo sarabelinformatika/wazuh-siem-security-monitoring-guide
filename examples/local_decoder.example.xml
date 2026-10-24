@@ -1,0 +1,5 @@
+<decoder name="sarabel-example-auth">
+  <prematch>^SARABEL_AUTH</prematch>
+  <regex>user=([^ ]+) src=([^ ]+) result=([^ ]+)</regex>
+  <order>user,srcip,status</order>
+</decoder>
